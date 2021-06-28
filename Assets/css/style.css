@@ -1,0 +1,607 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvao7CIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtaorCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVuEorCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoorCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapbCIPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtzpbCIPrQ.ttf) format('truetype');
+}
+html{
+  font-family: 'Open Sans', sans-serif !important; 
+  scroll-behavior: smooth;
+}
+img.wp-smiley,
+        img.emoji {
+            /* display: inline !important; */
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+.btn-success{
+  background-color:#55A747 ;
+}
+.btn-success:hover{
+  background-color:#55A747 ;
+}
+.cards{
+  border-radius: none !important;
+  border: none !important;
+}
+
+
+#header{
+  background-color: black;
+}
+
+.header-inner{
+  margin-top: 85px !important;
+}
+.line{
+  width: 500px;
+  height: 4px;
+  background-color: #8a857c6e;
+}
+
+.background{
+  margin-top: 135px !important;
+background-color: #f5f6f8 !important;
+}
+
+#navbar {
+  /* border-bottom : 3px solid #3797a4; */
+  background: #FFFFFF;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  display: block;
+  -webkit-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s;
+}
+.navbar a {
+  
+  color: #555555 !important;
+  
+
+  font: Normal 12px/19px "Montserrat", sans-serif !important;
+    letter-spacing: 0px !important;
+    text-transform: uppercase !important;
+}
+
+#header1{
+     
+  height: 68vh;
+  
+          /* background: url('/img/header1.jpg')  no-repeat center/cover; */
+background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #18304bf1), url('/img/header.jpg')  no-repeat center/cover; */
+          /* background: linear-gradient(360deg,  #203f62, #070d13) fixed; */
+
+
+}
+
+.fas{
+  color: #c8c8c8;
+}
+.fas:hover{
+  color: white !important;
+}
+.inner-card{
+  border: solid 0.5px rgba(128, 128, 128, 0.089);
+  background-color: #f9f9f9;
+  transition: all ease-in-out 0.3s;
+}
+.inner-card:hover{
+  
+  background-color: #FCFCFC;
+}
+
+
+.inner-card p{
+  font-size: 14px;
+  color: #979797;
+
+}
+
+.inner-card a{
+  font-size: 14px;
+  color: rgb(88, 88, 88);
+  text-decoration: none !important;
+}
+.fal{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.join{
+  border-bottom:dotted 1px black; padding-bottom:3px; color:#006ba1;
+  transition: all ease-in-out 0.3s;
+}
+
+.join:hover{
+ color:red;
+}
+
+input{
+  color: white !important;
+  height: 45px !important;
+  border-radius: 0px !important;
+}
+select{
+
+  height: 45px !important;
+  border-radius: 0px !important;
+}
+
+#testimonial .carousel-indicators li {
+  background: 0 0;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+}
+.carousel-indicators li {
+  background: 0 0;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+}
+#testimonial {
+  background: #777777;
+}
+#testimonial .carousel-indicators li {
+  border: 2px solid #000 !important;
+}
+
+#testimonial .carousel-indicators .active {
+  background: #000 !important;
+}
+.text-dark{
+  color: #979797 !important;
+}
+
+
+
+/* __________________________________________________JOBS________________________________________________________ */
+
+#header2 {
+     
+  height: 40vh;
+  
+          /* background: url('/img/header1.jpg')  no-repeat center/cover; */
+          background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.438)), to(rgba(0, 0, 0, 0.9))), url('') ;
+
+          /* background: linear-gradient(180deg,  #18304bf1, #18304bf1), url('/img/header.jpg')  no-repeat center/cover; */
+          /* background: linear-gradient(360deg,  #203f62, #070d13) fixed; */
+
+
+}
+
+.jobs_background{
+  margin-top: 0px !important;
+/* background-color: #f5f6f8 !important; */
+}
+
+.jobs-header-inner{
+  margin-top: 55px !important;
+}
+
+.job_cards{
+  border-radius: none !important;
+  border: none !important;
+}
+
+.jobs-inner-card{
+  border: solid 0.5px rgba(128, 128, 128, 0.089);
+  /* background-color: white; */
+  transition: all ease-in-out 0.3s;
+}
+
+.jobs-inner-card h6{
+  margin-top: 5px;
+}
+
+.jobs-inner-card h6:hover{
+  color: rgb(85, 167, 71) !important;
+}
+
+.jobs-inner-card p{
+  font-size: 12px;
+  color: rgb(88, 88, 88);
+}
+
+.jobs-inner-card a{
+  margin-top: 2px;
+  font-size: 12px;
+  color: rgb(85, 167, 71) !important;
+  text-decoration: none !important;
+}
+
+.sidebar-filters{
+  /* border-radius: 1px !important; */
+  border-color: grey !important;
+  border: 0.5px !important;
+}
+
+.btn-outline-dark{
+  width: 110px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.btn-outline-dark:hover{
+  color: #55A747 !important; 
+  background-color: #fff;
+  border-color: #55A747;
+}
+
+
+
+/* _______________________________________Candidates________________________________________ */
+
+#header3{
+     
+  height: 48vh;
+  
+          /* background: url('/img/header1.jpg')  no-repeat center/cover; */
+background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #18304bf1), url('/img/header.jpg')  no-repeat center/cover; */
+          /* background: linear-gradient(360deg,  #203f62, #070d13) fixed; */
+
+
+}
+
+.candidates_background{
+  margin-top: 130px !important;
+/* background-color: #f5f6f8 !important; */
+}
+
+.candidates-header-inner{
+  margin-top: 100px !important;
+}
+
+.candidates_cards{
+  border-radius: none !important;
+  border: none !important;
+}
+
+.candidates-inner-card{
+  border: solid 0.5px rgba(128, 128, 128, 0.089);
+  /* background-color: white; */
+  transition: all ease-in-out 0.3s;
+}
+
+.candidates-inner-card h6{
+  margin-top: 8px;
+  margin-bottom: 5px !important;
+}
+
+.candidates-inner-card h6:hover{
+  color: rgb(85, 167, 71) !important;
+}
+
+.candidates-inner-card p{
+  font-size: 12px;
+  color: rgb(88, 88, 88);
+  margin-bottom: 5px !important;
+}
+
+.candidates-inner-card a{
+  font-size: 12px;
+  color: rgb(85, 167, 71) !important;
+  text-decoration: none !important;
+}
+
+ .candidates-btn{
+  width: 115px;
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 0px;
+}
+/*
+.btn-outline-dark:hover{
+  color: #55A747 !important; 
+  background-color: #fff;
+  border-color: #55A747;
+} */
+
+
+
+
+/* _______________________________________loginPage________________________________________ */
+
+
+#header4{
+     
+  height: 42vh;
+  
+          /* background: url('/img/header1.jpg')  no-repeat center/cover; */
+background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #18304bf1), url('/img/header.jpg')  no-repeat center/cover; */
+          /* background: linear-gradient(360deg,  #203f62, #070d13) fixed; */
+
+
+}
+
+.SignUp_background{
+  margin-top: 130px !important;
+/* background-color: #f5f6f8 !important; */
+}
+
+.SignUp-header-inner{
+  margin-top: 100px !important;
+}
+
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.SignUP_container {
+  padding: 45px;
+  width: 630px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+#SignUp{
+  height: 75vh;
+}
+
+
+
+
+/* ____________________________________Candidate_dashboard_________________________________ */
+
+.candidates_profile{
+  border-radius: none !important;
+  border: none !important;
+}
+
+
+.profile_tabs{
+  border-radius: none !important;
+  border: none !important;
+}
+
+
+.sidebar-tabs {
+  background-color: #fff;
+  width: 265px;
+  border-bottom: 2.5px solid;
+  border-color: whitesmoke;
+}
+
+.sidebar-tabs:hover{
+  border-color: #55a755;
+  color: #55a755;
+  }
+  
+.sidebar-tabs a{
+  color: inherit;
+  margin-left: 4px;
+  font-size: 14px;
+  text-decoration: none !important;
+}
+
+.sidebar-tabs a:hover{
+  color: #55A747;
+}
+
+
+.jobs-inner-card{
+  border: solid 0.5px rgba(128, 128, 128, 0.089);
+  /* background-color: white; */
+  transition: all ease-in-out 0.3s;
+}
+
+.jobs-inner-card h6{
+  margin-top: 5px;
+}
+
+.jobs-inner-card h6:hover{
+  color: rgb(85, 167, 71) !important;
+}
+
+.jobs-inner-card p{
+  font-size: 12px;
+  color: rgb(88, 88, 88);
+}
+
+.jobs-inner-card a{
+  margin-top: 2px;
+  font-size: 12px;
+  color: rgb(85, 167, 71) !important;
+  text-decoration: none !important;
+}
+
+.sidebar-filters{
+  /* border-radius: 1px !important; */
+  border-color: grey !important;
+  border: 0.5px !important;
+}
+
+
+
+/* .candidates_profile .nav-tabs {
+  border: 0;
+}
+
+.candidates_profile .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: #2c4964;
+  border-radius: 0;
+  border-right: 2px solid #ebf1f6;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.candidates_profile .nav-link:hover {
+  color: #1977cc;
+}
+
+.candidates_profile .nav-link.active {
+  color: #1977cc;
+  border-color: #1977cc;
+}
+
+.candidates_profile .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.candidates_profile .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2c4964;
+}
+
+.candidates_profile .details p {
+  color: #777777;
+}
+
+.candidates_profile .details p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .candidates_profile .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+  .candidates_profile .nav-link.active {
+    color: #fff;
+    background: #1977cc;
+  }
+} */

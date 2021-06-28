@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel='stylesheet' id='jobcareer_style_css-css' href='Assets/css/style1.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='jobcareer_widgets_css-css' href='Assets/css/widget.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='jobcareer_custom_style_css-css'
+        href='Assets/css/custom-style.css?ver=9d8169f59302cc15950570b0b6ac6c3e' type='text/css' media='all' />
+    <link rel='stylesheet' id='cs_iconmoon_css-css' href='Assets/css/iconmoon.css' type='text/css' media='all' />
+
+
+
+</head>
+
+<body>
+
+    <!-- Start of Navbar -->
+    <nav id="navbar" class="navbar navbar1 px-0 navbar-expand-lg px-5 py-3  mb-0">
+        <div class="container">
+            <a href="{{url('/')}}" class="navbar-brand">
+                <img src="Assets/img/logo.png" alt="Visumify Logo" class=" " style="color:#CBCBCB">
+            </a>
+            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#navDiv">
+                <span class="toogler-icon">
+                    <span>
+                        <img src="{{Assets('/img/menu.svg')}}" height="30" width="18" class="img-fluid"
+                            alt="search icon">
+                    </span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse text-center pt-2" id="navDiv">
+                <ul class="navbar-nav ml-auto text-dark">
+
+                    <li class="nav-item px-2 active">
+                        <a href="" class="nav-link">Jobs</a>
+                    </li>
+                    <li class="nav-item px-2 ">
+                        <a href="" class="nav-link">Candidates</a>
+                    </li>
+                    <li class="nav-item px-2 ">
+                        <a href="" class="nav-link">Employer</a>
+                    </li>
+                    <li class="nav-item px-2 pl-4">
+                        <a href="" class="nav-link1"><i class="fas fa-pencil-alt" style="color: #55A747;"></i> <span
+                                class="join"> Join Us </span></a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="" class="nav-link1 btn btn-success py-1"
+                            style="color:white !important; border-radius: 0px;"> <i
+                                class="fal fa-sign-in-alt "></i><span class=""> Sign In</span> </b></a>
+                    </li>
+
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- end of navbar -->
+
+    <!-- Start of Header-->
+
+    <section id="header3">
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="px-4 col-12 mx-auto candidates-header-inner">
+                    <!-- Search form -->
+
+
+
+
+
+
+                    <h1 style="font-weight:600;" class=" text-center text-white">CANDIDATES LIST WITH FILTERABLE
+                    </h1>
+
+
+                    <p class=" text-center px-5 pb-2 text-white">
+                        Interview:10 question that won't get you the job Find the sweet spot between your passion and
+                        job
+                    </p>
+
+
+
+                    <form action="{{route('search')}}" method="get">
+
+                        <div
+                            class="row candidates_background align-items-center justify-content-center py-1 px-3 mx-1 ml-5">
+                            <div class="col-lg-4 p-0 my-2 px-2">
+
+                                <label for="city"></label>
+                                <input placeholder="All Locations" class=" text input-css search-input form-control"
+                                    name="city">
+                            </div>
+
+                            <div class="col-lg-4 p-0 my-2 px-2">
+
+                                <label for="city"></label>
+                                <select class="px-2 select-css search-input form-control" name="city">
+                                    <option class="option" value="">All Specialisms</option>
+
+
+                                </select>
+
+                            </div>
+                            <div class="col-lg-3 p-0 my-2 px-2">
+
+                                <a class="btn btn-success px-5 py-2 mt-4" href=""
+                                    style="border-radius: 0px !important;">Search Resume</a>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- End of Header-->
+
+    <!-- Start of Candidates Cards -->
+
+    <section id="candidates_cards">
+
+
+        <div class="mt-5 pt-4 container-fluid px-5">
+
+            <div class="row justify-content-center mx-3 px-4 ml-5">
+
+                <div class="col-3 candidates_cards py-2">
+                    <div class="row sidebar-filters mt-2">
+                        <div class="col-12 px-4 py-1">
+                            <label for="search"></label>
+                            <input name="search" class="place  search-input form-control mr-3 " type="text"
+                                placeholder="Search Keywords" aria-label="Search">
+                        </div>
+                    </div>
+                    <div class="row sidebar-filters">
+                        <div class="col-12 px-4 py-1">
+                            <label for="city"></label>
+                            <input placeholder="All Locations" class=" text input-css search-input form-control"
+                                name="city">
+                        </div>
+                    </div>
+                    <div class="row sidebar-filters mt-1">
+                        <div class="col-12 px-4 py-1">
+                            <h6 style="color: aquamarine;">Date Posted</h6>
+                            <!-- <p class="font-weight-lighter">Last Hour </p> -->
+                            <label class="container">
+                                <input type="radio">
+                                <span class="checkmark"> Last Hour</span>
+                            </label>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-9 candidates_cards py-2">
+
+
+                    <div class="row candidates-inner-card p-3">
+                        <div class="col-2 py-2 px-1">
+                            <img src="Assets/img/candidatePicture/img-not-found.jpg" width="100"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                        </div>
+                        <div class="col-6 p-2 ml-1">
+                            <h6>FOOL123</h6>
+                            <p>Last Activity 1 week ago</p>
+                            <a>Banking</a>
+                        </div>
+                        <div class="col-3 p-2 mt-4 ml-5">
+                            <button type="button" class="btn btn-success candidates-btn"
+                                style="font-size: 13px;">Shortlist</button>
+                        </div>
+                    </div>
+
+
+                    <div class="row candidates-inner-card p-3">
+                        <div class="col-2 py-2 px-1">
+                            <img src="Assets/img/candidatePicture/img-not-found.jpg" width="100"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                        </div>
+                        <div class="col-6 p-2 ml-1">
+                            <h6>ANONYMOUS</h6>
+                            <p>Last Activity 1 week ago</p>
+                            <a>Digital & Creative, Graduate</a>
+                        </div>
+                        <div class="col-3 p-2 mt-4 ml-5">
+                            <button type="button" class="btn btn-success candidates-btn"
+                                style="font-size: 13px;">Shortlist</button>
+                        </div>
+                    </div>
+
+
+                    <div class="row candidates-inner-card p-3">
+                        <div class="col-2 py-2 px-1">
+                            <img src="Assets/img/candidatePicture/candidate1.png" width="100"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                        </div>
+                        <div class="col-6 p-2 ml-1">
+                            <h6>AZIMA DHANCHI</h6>
+                            <p>$450 p.a minimum Last Activity 6 week ago</p>
+                            <a>Accountancy</a>
+                        </div>
+                        <div class="col-3 p-2 mt-4 ml-5">
+                            <button type="button" class="btn btn-success candidates-btn"
+                                style="font-size: 13px;">Shortlist</button>
+                        </div>
+                    </div>
+
+
+                    <div class="row candidates-inner-card p-3">
+                        <div class="col-2 py-2 px-1">
+                            <img src="Assets/img/candidatePicture/candidate2.png" width="100"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                        </div>
+                        <div class="col-6 p-2 ml-1">
+                            <h6>ABALA WAQAS</h6>
+                            <p>Last Activity 2 years ago</p>
+                            <a>IT Contractor</a>
+                        </div>
+                        <div class="col-3 p-2 mt-4 ml-5">
+                            <button type="button" class="btn btn-success candidates-btn"
+                                style="font-size: 13px;">Shortlist</button>
+                        </div>
+                    </div>
+
+
+                    <div class="row candidates-inner-card p-3">
+                        <div class="col-2 py-2 px-1">
+                            <img src="Assets/img/candidatePicture/candidate3.png" width="100"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                        </div>
+                        <div class="col-6 p-2 ml-1">
+                            <h6>MUBASHIR IBAD</h6>
+                            <p>Last Activity 2 years ago</p>
+                            <a>Purchase Ledger Clerk</a>
+                        </div>
+                        <div class="col-3 p-2 mt-4 ml-5">
+                            <button type="button" class="btn btn-success candidates-btn"
+                                style="font-size: 13px;">Shortlist</button>
+                        </div>
+                    </div>
+
+                    <div class="row candidates-inner-card p-3">
+                        <div class="col-2 py-2 px-1">
+                            <img src="Assets/img/candidatePicture/candidate4.png" width="100"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                        </div>
+                        <div class="col-6 p-2 ml-1">
+                            <h6>NOMAN ABBASI</h6>
+                            <p>$300 p.a minimum Last Activity 2 years ago</p>
+                            <a>Banking</a>
+                        </div>
+                        <div class="col-3 p-2 mt-4 ml-5">
+                            <button type="button" class="btn btn-success candidates-btn"
+                                style="font-size: 13px;">Shortlist</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- End of Candidates Cards -->
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <div class="cs-footer footer-v1 default-footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4  col-md-4  col-sm-6 col-xs-12">
+                            <div class="widget widget-newsletter fancy">
+                                <div class="widget-title">
+                                    <h5>NEWSLETTER</h5>
+                                </div>
+                                <div class="fieldset">
+                                    <p>Subscribe to Visumify newsletter to get the latest jobs posted, candidates ,and
+                                        other latest news stay updated.</p>
+                                    <form
+                                        action="javascript:jobcareer_mailchimp_submit('wp-content/themes/jobcareer','2','wp-admin/admin-ajax.php')"
+                                        id="mcform_2" class="cs-mailchimp" method="post">
+                                        <div class="clear"></div>
+
+                                        <input type="hidden" id="cs_list_id" name="cs_list_id" value="0" /></li>
+                                        </ul><input type="text"
+                                            onblur="if (this.value == '') {this.value = 'Enter your email address';}"
+                                            onfocus="if (this.value == 'Enter your email address') {this.value = '';}"
+                                            class="txt-bar vsmall" id="mc_email" name="mc_email"
+                                            value="Enter your email address" /></li>
+                                        </ul> <label>
+                                            <button type="submit" value="Submit"><i
+                                                    class="fas fa-chevron-right"></i></button>
+                                        </label>
+                                    </form>
+                                    <div id="newsletter_mess_2" style="display:none" class="cs-error-msg"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-md-4  col-sm-6 col-xs-12">
+                            <div class="widget widget_nav_menu">
+                                <div class="widget-title">
+                                    <h5>Frequently Asked Questions</h5>
+                                </div>
+                                <div class="menu-jobcareer-frequently-asked-questions-menu-container">
+                                    <ul id="menu-jobcareer-frequently-asked-questions-menu" class="menu">
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17950">
+                                            <a href="#">Privacy &#038; Security</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17951">
+                                            <a href="#">Terms of Service</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17952">
+                                            <a href="#">Communications</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17953">
+                                            <a href="#">Referral Terms</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17954">
+                                            <a href="#">Lending Licenses</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17955">
+                                            <a href="#">Disclaimers</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17956">
+                                            <a href="#">Support</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17957">
+                                            <a href="#">How It Works</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17958">
+                                            <a href="#">For Employers</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17959">
+                                            <a href="#">Underwriting</a>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17960">
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4  col-md-4  col-sm-6 col-xs-12">
+                            <div class="widget widget-text widget-contact-information">
+                                <div class="contact-info">
+                                    <div class="widget-title">
+                                        <h5>CONTACT US</h5>
+                                    </div>
+                                    <div class="widgettext">
+
+                                        <address>
+                                            <span>
+                                                Park Road, Tarlai Kalan,
+                                                Islamabad 45550, Pakistan0512352355<br>
+                                                info@Visumify.com </span>
+                                        </address>
+                                        <ul class="social-media">
+                                            <li><a href="#" data-original-title="facebook"><i
+                                                        class="icon-facebook"></i></a></li>
+                                            <li><a href="#" data-original-title="twitter"><i
+                                                        class=" icon-twitter"></i></a></li>
+                                            <li><a href="#" data-original-title="linkedin"><i
+                                                        class="icon-linkedin"></i></a></li>
+                                            <li><a href="#" data-original-title="instagram"><i
+                                                        class="icon-instagram"></i></a></li>
+                                            <li><a href="#" data-original-title="youtube"><i
+                                                        class="icon-youtube"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color:#1e1f21;" class="cs-copyright">
+                <div class="container">
+                    <div class="cs-copyright-area">
+                        <div class="row">
+                            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+
+                                <div class="footer-links">
+                                    © 2017 - 2021 Visumify All rights reserved. Design by <a class='cs-color'
+                                        href='#'>Visume (PVT) limited</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="back-to-top">
+                                    <a href="#" style="color:#fff;">Back to top<i class="fa fa-arrow-up"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
