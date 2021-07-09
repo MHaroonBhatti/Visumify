@@ -549,6 +549,20 @@ button:hover {
   border: 0.5px !important;
 }
 
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+
+.map-container iframe{
+  left:0;
+  top:0;
+  height: 300px;;
+  width:100%;
+  position:absolute;
+  }
 
 
 /* .candidates_profile .nav-tabs {

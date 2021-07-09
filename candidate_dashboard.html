@@ -227,19 +227,25 @@
                 <div class="col-8 job_cards py-2 mr-2">
 
                     <div class="tab-content container-fluid">
-                        <div class="collapse show" id="tab-1">
+                        <div class="collapse" id="tab-1">
                             <div class="row">
-                                <div class="col-lg-10 details order-2 order-lg-1">
+                                <div class="col-lg-10">
                                     <h1>Wellcome to ~Candidate Name~</h1>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mt-2">
+                                    <h4>MY PROFILE</h4>
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="col-lg-3 py-2">
-                                    <h4>MY PROFILE</h4>
                                     <img src="Assets/img/candidatePicture/img-not-found.jpg" width=145px
                                         style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                                 </div>
-                                <div class="col-lg-9 py-5 mt-5">
+                                <div class="col-lg-9 py-5">
                                     <button type="button" class="btn btn-default"
                                         style="width: max-content; font-size: 15px; color: #55A747; border-color: #55A747;">Browse</button>
                                     <p>Max file size is 1MB, Minimum dimension: 270x210 And Suitable files are .jpg &
@@ -261,23 +267,178 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-12 py-2 mt-4">
+                                <div class="col-lg-12 py-1 mt-4">
                                     <a> Full Name</a>  
                                <input type="text" placeholder="Title" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
                                 </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-lg-6 py-2">
+                                <div class="col-lg-6 py-1">
                                     <a> Job Title</a>  
                                <input type="text" placeholder="Job Title" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
                                 </div>
-                                <div class="col-lg-6 py-2">
+                                <div class="col-lg-6 py-1">
                                     <a> Minimum Salary</a>  
                                <input type="text" placeholder="Minimum Salary" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 py-1 mb-2">
+                                    <a> Allow In Search & Listing</a>  
+                                    <select class="form-control" id="Listing" aria-placeholder="Please Select">
+                                        <option>Please Select</option>
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                      </select>
+                                </div>
+                                <div class="col-lg-6 py-1 mb-2">
+                                    <a> Specialisms</a>  
+                                    <select class="form-control" id="Specialisms">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                      </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 py-3 mt-3">
+                                    <a>Description</a>
+                                    <textarea class="form-control" rows="10" id="textarea"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mt-4">
+                                    <h4>SOCIAL NETWORK</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 mt-2">
+                                    <input type="text" placeholder="Facebook" style="border: solid 1px #d4d4d4; background-color: #fff;">
+                                    <!-- <i class="fa fa-facebook" aria-hidden="true"></i> -->
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Twitter" style="border: solid 1px #d4d4d4; background-color: #fff;">
+                                    <!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <input type="text" placeholder="Linkedin" style="border: solid 1px #d4d4d4; background-color: #fff;">
+                                    <!-- <i class="fa fa-linkedin" aria-hidden="true"></i> -->
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mt-4">
+                                    <h4>VIDEO URL</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <input type="text" placeholder="Video url" style="border: solid 1px #d4d4d4; background-color: #fff;">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mt-4">
+                                    <h4>CONTACT INFORMATION</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 py-1">
+                                    <a> Phone Number</a>  
+                               <input type="text" placeholder="Phone Number" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
+                                </div>
+                                <div class="col-lg-6 py-1">
+                                    <a> Email</a>  
+                               <input type="text" placeholder="Email" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 py-1 mb-2">
+                                    <a> Website</a>  
+                               <input type="text" placeholder="Website" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 py-1">
+                                    <a> Country</a>  
+                               <input type="text" placeholder="Country" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
+                                </div>
+                                <div class="col-lg-6 py-1">
+                                    <a> City</a>  
+                               <input type="text" placeholder="City" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 py-1">
+                                    <a> Complete Address</a>  
+                               <input type="text" placeholder="Complete Address" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 py-1">
+                                    <a> Find on Map</a>  
+                               <input type="text" placeholder="Map" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
+                                </div>
+                                <div class="col-lg-6 py-1">
+                                    <a> Longitude</a>  
+                               <input type="text" placeholder="Longitude" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 py-1 mb-2">
+                                    <a> Latitude</a>  
+                               <input type="text" placeholder="Latitude" style="border: solid 1px #d4d4d4; background-color: #fff;"> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="button" class="btn btn-default"
+                                        style="width: max-content; font-size: 15px; color: #55A747; border-color: #55A747;">Search Location</button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mt-5">
+                                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 300px">
+                                        <iframe src="{{url('/')}}" frameborder="0"
+                                          style="border:0" allowfullscreen></iframe>
+                                      </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4>EXTRA INFORMATION</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 my-5 mb-5">
+                                    <button type="button" class="btn btn-default"
+                                        style="width: max-content; font-size: 15px; color: #55A747; border-color: #55A747;">Update</button>
+                                </div>
+                            </div>
+
                         </div>
+
+
                         <div class="collapse" id="tab-2">
                             <div class=" card card-body">
                                 <div class="row">
