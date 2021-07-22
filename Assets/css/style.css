@@ -481,6 +481,11 @@ button:hover {
 
 /* ____________________________________Candidate_dashboard_________________________________ */
 
+.resume{
+  border-radius: none !important;
+  border: none !important;
+}
+
 .candidates_profile{
   border-radius: none !important;
   border: none !important;
@@ -559,14 +564,43 @@ button:hover {
 .map-container iframe{
   left:0;
   top:0;
-  height: 300px;;
+  height: 300px;
   width:100%;
   position:absolute;
   }
   
+.qualification_card{
+  margin-top: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid;
+  border-color: #e4e1e1;
 
-   
+}
 
+.qualification_card a{
+  color: black !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.qualification_card p{
+  color: #777777;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.qualification_card .card{
+  width: 85px;
+}
+
+.addnew_icon{
+  color: #55A747;
+}
+
+.addnew_icon p{
+  font-size: 15px;
+  text-decoration:#55A747 underline ;
+}
 
 /* .candidates_profile .nav-tabs {
   border: 0;
