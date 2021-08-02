@@ -568,7 +568,17 @@ button:hover {
   width:100%;
   position:absolute;
   }
+
+.addnew_icon{
+  color: #55A747;
+  }
   
+.addnew_icon p{
+  font-size: 15px;
+  text-decoration:#55A747 underline ;
+  }
+  
+
 .qualification_card{
   margin-top: 18px;
   padding-bottom: 16px;
@@ -590,17 +600,32 @@ button:hover {
 }
 
 .qualification_card .card{
-  width: 85px;
+  width: 85px max-content;
 }
 
-.addnew_icon{
-  color: #55A747;
+.experiance_card{
+  margin-top: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid;
+  border-color: #e4e1e1;
+
 }
 
-.addnew_icon p{
-  font-size: 15px;
-  text-decoration:#55A747 underline ;
+.experiance_card a{
+  color: black !important;
+  font-size: 14px;
 }
+
+.experiance_card p{
+  color: #777777;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.experiance_card .card{
+  width: max-content;
+}
+
 
 /* .candidates_profile .nav-tabs {
   border: 0;
