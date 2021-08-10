@@ -137,6 +137,13 @@
                         <div class="col-2 pt-2">
                             <span class="fas fa-chevron-right"></span>
                         </div>
+                        <!-- <ul class="collapse" id="myResume">
+                            <li>Education</li>
+                            <li data-target="#EXPERIANCE">Experiance</li>
+                            <li>Portfolio</li>
+                            <li>Skills</li>
+                            <li>Honors Award</li>
+                        </ul> -->
                     </div>
 
                     <div class="row sidebar-tabs my-2">
@@ -241,11 +248,11 @@
 
                             <div class="row">
                                 <div class="col-lg-3 py-2">
-                                    <img src="Assets/img/candidatePicture/img-not-found.jpg" width=145px
+                                    <img src="Assets/img/stock.jpg" width=145px
                                         style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                                 </div>
                                 <div class="col-lg-9 py-5">
-                                    <button type="button" class="btn btn-default"
+                                    <button type="button" class="btn btn-default py-3"
                                         style="width: max-content; font-size: 15px; color: #55A747; border-color: #55A747;">Browse</button>
                                     <p>Max file size is 1MB, Minimum dimension: 270x210 And Suitable files are .jpg &
                                         .png</p>
@@ -254,11 +261,11 @@
 
                             <div class="row">
                                 <div class="col-lg-3 py-2 mt-4">
-                                    <img src="Assets/img/candidatePicture/img-not-found.jpg" width=145px
+                                    <img src="Assets/img/stock.jpg" width=145px
                                         style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                                 </div>
                                 <div class="col-lg-9 py-5 mt-3">
-                                    <button type="button" class="btn btn-default"
+                                    <button type="button" class="btn btn-default py-3"
                                         style="width: max-content; font-size: 15px; color: #55A747; border-color: #55A747;">Browse
                                         Cover</button>
                                     <p>Max file size is 1MB, Minimum dimension: 270x210 And Suitable files are .jpg &
@@ -456,8 +463,7 @@
 
                         </div>
 
-
-                        <div class="collapse active" id="tab-2">
+                        <div class="collapse" id="tab-2">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <h1>MY RESUME</h1>
@@ -574,7 +580,7 @@
 
                                 <div class="row">
                                     <div class="col-lg-12 my-3 mb-4">
-                                        <button type="button" class="btn btn-default"
+                                        <button type="button" class="btn btn-default py-3"
                                             style="width: max-content; font-size: 15px; color: #55A747; border-color: #55A747;">Add
                                             Education</button>
                                     </div>
@@ -585,7 +591,7 @@
 
                             <div class="row">
                                 <div class="col-lg-12 mt-2 mb-3">
-                                    <h4> <i class="fas fa-briefcase" style="color: #1e1f21; margin-inline-end: 10px;">
+                                    <h4 id="EXPERIANCE"> <i class="fa fa-briefcase" style="color: #1e1f21; margin-inline-end: 10px;">
                                         </i>EXPERIANCE</h4>
                                 </div>
                             </div>
@@ -683,12 +689,240 @@
 
                                 <div class="row">
                                     <div class="col-lg-12 my-3 mb-4">
-                                        <button type="button" class="btn btn-default"
+                                        <button type="button" class="btn btn-default py-3"
                                             style="width: max-content; font-size: 15px; color: #55A747; border-color: #55A747;">Add
                                             Education</button>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mt-2 mb-3">
+                                    <h4> <i class="far fa-images" style="color: #1e1f21; margin-inline-end: 10px;">
+                                        </i>PORTFOLIO</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mt-2">
+                                    <a> There is no picture to show</a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img id="portfolioPic" src="Assets/img/stock.jpg" alt="PORTFOLIO">
+                                </div>
+                            </div>
+
+                            <div class="row addnew_icon mt-5" data-toggle="collapse" data-target="#addnewportfolioPIC">
+                                <i class="fa fa-plus mt-2 mr-2"></i>
+                                <p> Add New</p>
+                            </div>
+
+                            <div class="container-fluid addnew_card collapse mt-3" id="addnewportfolioPIC">
+
+                                <div class="row">
+                                    <div class="col-lg-3 py-2">
+                                        <img id="portfolioPic" alt="PORTFOLIO" src="Assets/img/stock.jpg" width=145px
+                                            style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                                    </div>
+                                    <div class="col-lg-9 py-5">
+                                        <button type="button" class="btn btn-default py-3"
+                                            style="width: max-content; font-size: 15px; color: #55A747; border-color: #55A747;">Browse</button>
+                                        <p>Max file size is 1MB, Minimum dimension: 270x210 And Suitable files are .jpg &
+                                            .png</p>
+                                    </div>
+                                </div>  
+
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <input type="text" style="border: solid 1px #d4d4d4; background-color: #fff;">
+                                    </div>
+                                    <div class="col-lg-4 mt-2">
+                                        <button type="button" class="btn btn-default py-3"
+                                            style="width: max-content; font-size: 15px; color: #55A747; border-color: #55A747;">Add
+                                            Portfolio</button>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-lg-12 mt-2 mb-3">
+                                    <h4> <i class="fa fa-clock" style="color: #1e1f21; margin-inline-end: 10px;">
+                                        </i>SKILLS</h4>
+                                </div>
+                            </div>
+
+                            <div class="row" style="border-bottom: solid 3px rgba(219, 219, 219, 0.747); height: 50px;">
+                                <div class="col-lg-6 px-2">
+                                    <p>
+                                        Skills or Experties
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        Level
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row skill_card">
+                                <div class="col-lg-6">
+                                     <a>
+                                        Marketing Managment
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-5">
+                                    <div class="card text-center px-2">
+                                        70
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-1">
+                                    <i class="fa fa-cog ml-1" data-toggle="tooltip" title="Edit"></i>
+                                    <i class="far fa-trash-alt ml-1" data-toggle="tooltip" title="Remove"></i>
+                                </div>
+                            </div>
+
+                            <div class="row skill_card">
+                                <div class="col-lg-6">
+                                    <a>
+                                        Social Media Marketing
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-5">
+                                    <div class="card text-center px-2">
+                                        95
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-1">
+                                    <i class="fa fa-cog ml-1" data-toggle="tooltip" title="Edit"></i>
+                                    <i class="far fa-trash-alt ml-1" data-toggle="tooltip" title="Remove"></i>
+                                </div>
+                            </div>
+
+                            <div class="row skill_card">
+                                <div class="col-lg-6">
+                                   <a>
+                                        Interpreting
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-5">
+                                    <div class="card text-center px-2">
+                                        80
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-1">
+                                    <i class="fa fa-cog ml-1" data-toggle="tooltip" title="Edit"></i>
+                                    <i class="far fa-trash-alt ml-1" data-toggle="tooltip" title="Remove"></i>
+                                </div>
+                            </div>
+
+                            <div class="row addnew_icon mt-5" data-toggle="collapse" data-target="#addnewskill">
+                                <i class="fa fa-plus mt-2 mr-2"></i>
+                                <p> Add New</p>
+                            </div>
+
+                            <div class="container-fluid addnew_card collapse" id="addnewskill">
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" title="Skill Heading"
+                                            style="border: solid 1px #d4d4d4; background-color: #fff;">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input type="text" title="Percentage" placeholder="Skill Percentage*"
+                                            style="border: solid 1px #d4d4d4; background-color: #fff;">
+                                    </div>
+                                    <div class="col-lg-2 mt-2">
+                                        <button type="button" class="btn btn-default py-3"
+                                            style="width: max-content; font-size: 15px; color: #55A747; border-color: #55A747;">Add
+                                            Skill</button>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-lg-12 mt-2 mb-3">
+                                    <h4> <i class="fa fa-trophy" style="color: #1e1f21; margin-inline-end: 10px;">
+                                        </i>HONORS & AWARDS</h4>
+                                </div>
+                            </div>
+
+                            <div class="row" style="border-bottom: solid 3px rgba(219, 219, 219, 0.747); height: 50px;">
+                                <div class="col-lg-7 px-2">
+                                    <p>
+                                        Honors/Awards
+                                    </p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <p>
+                                        Dates
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row awards_card">
+                                <div class="col-lg-7">
+                                   <a>
+                                        Workshop For Youth Leader in Teaching English
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="card text-center px-2">
+                                        2014
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-1">
+                                    <i class="fa fa-cog ml-1" data-toggle="tooltip" title="Edit"></i>
+                                    <i class="far fa-trash-alt ml-1" data-toggle="tooltip" title="Remove"></i>
+                                </div>
+                            </div>
+
+                            <div class="row addnew_icon mt-5" data-toggle="collapse" data-target="#addnewAward">
+                                <i class="fa fa-plus mt-2 mr-2"></i>
+                                <p> Add New</p>
+                            </div>
+
+                            <div class="container-fluid addnew_card collapse" id="addnewAward">
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Award Name*"
+                                            style="border: solid 1px #d4d4d4; background-color: #fff;">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Select Year*"
+                                            style="border: solid 1px #d4d4d4; background-color: #fff;">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12 py-3 mb-4">
+                                        <textarea class="form-control" rows="10" id="textarea"></textarea>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+
+
+
 
                         </div>
 
@@ -711,6 +945,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="collapse" id="tab-4">
                             <div class=" card card-body">
                                 <div class="row">
@@ -728,6 +963,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="collapse" id="tab-5">
                             <div class=" card card-body">
                                 <div class="row">
