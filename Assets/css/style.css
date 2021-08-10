@@ -98,12 +98,6 @@ img.wp-smiley,
 }
 
 
-
-
-/*========================================================================================================================================== */
-/* ______________________________________________________________________Index_________________________________________________________ */
-
-
 #header{
   background-color: black;
 }
@@ -237,10 +231,7 @@ select{
 
 
 
-
-/*========================================================================================================================================== */
-/* ______________________________________________________________________Jobs_________________________________________________________ */
-
+/* __________________________________________________JOBS________________________________________________________ */
 
 #header2 {
      
@@ -315,9 +306,7 @@ select{
 
 
 
-/*========================================================================================================================================== */
-/* ______________________________________________________________________Candidates_________________________________________________________ */
-
+/* _______________________________________Candidates________________________________________ */
 
 #header3{
      
@@ -388,8 +377,7 @@ background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #1
 
 
 
-/*========================================================================================================================================== */
-/* ______________________________________________________________________LogIn_Page_________________________________________________________ */
+/* _______________________________________loginPage________________________________________ */
 
 
 #header4{
@@ -491,14 +479,7 @@ button:hover {
 
 
 
-/*========================================================================================================================================== */
-/* ______________________________________________________________________Candidates_Dashboard_________________________________________________________ */
-
-
-.resume{
-  border-radius: none !important;
-  border: none !important;
-}
+/* ____________________________________Candidate_dashboard_________________________________ */
 
 .candidates_profile{
   border-radius: none !important;
@@ -568,130 +549,59 @@ button:hover {
   border: 0.5px !important;
 }
 
-.map-container{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
-  }
 
-.map-container iframe{
-  left:0;
-  top:0;
-  height: 300px;
-  width:100%;
-  position:absolute;
-  }
 
-.addnew_icon{
-  color: #55A747;
-  }
-  
-.addnew_icon p{
-  font-size: 15px;
-  text-decoration:#55A747 underline ;
-  cursor: pointer;
-  }
-  
-
-.qualification_card{
-  margin-top: 18px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid;
-  border-color: #e4e1e1;
-
+/* .candidates_profile .nav-tabs {
+  border: 0;
 }
 
-.qualification_card a{
-  color: black !important;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.qualification_card p{
-  color: #777777;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.qualification_card .card{
-  width: 85px max-content;
-}
-
-.experiance_card{
-  margin-top: 18px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid;
-  border-color: #e4e1e1;
-
-}
-
-.experiance_card a{
-  color: black !important;
-  font-size: 14px;
-}
-
-.experiance_card p{
-  color: #777777;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.experiance_card .card{
-  width: max-content;
-}
-
-#portfolioPic {
-  border-radius: 5px;
-  cursor: pointer;
+.candidates_profile .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
   transition: 0.3s;
+  color: #2c4964;
+  border-radius: 0;
+  border-right: 2px solid #ebf1f6;
+  font-weight: 600;
+  font-size: 15px;
 }
 
-#portfolioPic:hover {opacity: 0.7;}
-
-
-.skill_card{
-  margin-top: 18px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid;
-  border-color: #e4e1e1;
-
+.candidates_profile .nav-link:hover {
+  color: #1977cc;
 }
 
-.skill_card a{
-  color: black !important;
-  font-size: 14px;
+.candidates_profile .nav-link.active {
+  color: #1977cc;
+  border-color: #1977cc;
 }
 
-.skill_card p{
-color: #777777;
-  font-size: 12px;
-  font-weight: 700;
+.candidates_profile .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
 }
 
-.skill_card .card{
-  width: max-content;
+.candidates_profile .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2c4964;
 }
 
-.awards_card{
-  margin-top: 18px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid;
-  border-color: #e4e1e1;
-
+.candidates_profile .details p {
+  color: #777777;
 }
 
-.awards_card a{
-  color: black !important;
-  font-size: 14px;
+.candidates_profile .details p:last-child {
+  margin-bottom: 0;
 }
 
-.awards_card p{
-color: #777777;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.awards_card .card{
-  width: max-content;
-}
+@media (max-width: 992px) {
+  .candidates_profile .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+  .candidates_profile .nav-link.active {
+    color: #fff;
+    background: #1977cc;
+  }
+} */
