@@ -96,37 +96,34 @@
                         job
                     </p>
 
+                    <div class="row candidates_background justify-content-center">
 
+                        <div class="col-lg-12">
 
-                    <form action="{{route('search')}}" method="get">
+                            <ul class="list-group list-group-horizontal ml-5 pl-5">
+                                <li>
+                                    <label for="city"></label>
+                                    <input placeholder="All Locations" class="text input-css search-input form-control"
+                                        name="city" style="font-size: 12px;">
+                                </li>
+                                <li>
+                                    <label for="city"></label>
+                                    <select class="px-lg-2 search-input form-control" name="city"
+                                        style="font-size: 12px;">
+                                        <option class="option" value="">All Specialisms</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <button class="btn btn-success " href="" style="    border: 0.28rem solid #55A747;
+                                    border-radius: 0px !important;
+                                    width: 55%;
+                                    margin-top: 1.44rem;">Search Resume
+                                    </button>
+                                </li>
+                            </ul>
 
-                        <div
-                            class="row candidates_background align-items-center justify-content-center py-1 px-3 mx-1 ml-5">
-                            <div class="col-lg-4 p-0 my-2 px-2">
-
-                                <label for="city"></label>
-                                <input placeholder="All Locations" class=" text input-css search-input form-control"
-                                    name="city">
-                            </div>
-
-                            <div class="col-lg-4 p-0 my-2 px-2">
-
-                                <label for="city"></label>
-                                <select class="px-2 select-css search-input form-control" name="city">
-                                    <option class="option" value="">All Specialisms</option>
-
-
-                                </select>
-
-                            </div>
-                            <div class="col-lg-3 p-0 my-2 px-2">
-
-                                <a class="btn btn-success px-5 py-2 mt-4" href=""
-                                    style="border-radius: 0px !important;">Search Resume</a>
-
-                            </div>
                         </div>
-                    </form>
+                    </div>
 
                 </div>
 
@@ -143,7 +140,7 @@
     <section id="candidates_cards">
 
 
-        <div class="mt-5 pt-4 container-fluid px-5">
+        <div class="mt-5 pt-4 container-fluid px-5 mb-5">
 
             <div class="row justify-content-center mx-3 px-4 ml-5">
 
@@ -192,8 +189,8 @@
                             <a>Banking</a>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-success candidates-btn"
-                                style="font-size: 13px;">Shortlist</button>
+                            <button type="button" class="btn btn-success candidates-btn" style="font-size: 13px;"><i
+                                    class="fas fa-plus-circle mr-2"></i>Shortlist</button>
                         </div>
                     </div>
 
@@ -209,8 +206,8 @@
                             <a>Digital & Creative, Graduate</a>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-success candidates-btn"
-                                style="font-size: 13px;">Shortlist</button>
+                            <button type="button" class="btn btn-success candidates-btn" style="font-size: 13px;"><i
+                                    class="fas fa-plus-circle mr-2"></i>Shortlist</button>
                         </div>
                     </div>
 
@@ -226,8 +223,8 @@
                             <a>Accountancy</a>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-success candidates-btn"
-                                style="font-size: 13px;">Shortlist</button>
+                            <button type="button" class="btn btn-success candidates-btn" style="font-size: 13px;"><i
+                                    class="fas fa-plus-circle mr-2"></i>Shortlist</button>
                         </div>
                     </div>
 
@@ -243,8 +240,8 @@
                             <a>IT Contractor</a>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-success candidates-btn"
-                                style="font-size: 13px;">Shortlist</button>
+                            <button type="button" class="btn btn-success candidates-btn" style="font-size: 13px;"><i
+                                    class="fas fa-plus-circle mr-2"></i>Shortlist</button>
                         </div>
                     </div>
 
@@ -260,8 +257,8 @@
                             <a>Purchase Ledger Clerk</a>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-success candidates-btn"
-                                style="font-size: 13px;">Shortlist</button>
+                            <button type="button" class="btn btn-success candidates-btn" style="font-size: 13px;"><i
+                                    class="fas fa-plus-circle mr-2"></i>Shortlist</button>
                         </div>
                     </div>
 
@@ -276,16 +273,36 @@
                             <a>Banking</a>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-success candidates-btn"
-                                style="font-size: 13px;">Shortlist</button>
+                            <button type="button" class="btn btn-success candidates-btn" style="font-size: 13px;"><i
+                                    class="fas fa-plus-circle mr-2"></i>Shortlist</button>
                         </div>
+                    </div>
+
+                    <div class="row">
+
+                        <ul class="page-numbers list-group list-group-horizontal">
+                            <li class="active disabled">
+                                <p>1</p>
+                            </li>
+                            <li class="active disabled">
+                                <p>2</p>
+                            </li>
+                            <li >
+                                <p>Next></p>
+                            </li>
+                        </ul>
+
                     </div>
 
 
 
                 </div>
 
+
+
             </div>
+
+
 
         </div>
 

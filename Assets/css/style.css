@@ -333,12 +333,22 @@ background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #1
 }
 
 .candidates_background{
-  margin-top: 130px !important;
+  margin-top: 180px !important;
+  margin-left: 25px;
 /* background-color: #f5f6f8 !important; */
+}
+
+.candidates_background ul li{
+  width: 400px !important;
+  list-style: none;
 }
 
 .candidates-header-inner{
   margin-top: 100px !important;
+}
+
+#candidates_cards{
+  margin-top: 90px;
 }
 
 .candidates_cards{
@@ -387,6 +397,17 @@ background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #1
   border-color: #55A747;
 } */
 
+.page-numbers{
+  margin-top: 2rem;
+  margin-left: -1rem;
+
+}
+
+.pageNo-card{
+  width: max-content;
+  margin: 2px;
+  border: 00.5px;
+}
 
 
 
@@ -529,6 +550,19 @@ button:hover {
   border-color: #55a755;
   color: #55a755;
   }
+
+
+  /* To change the color of sidebar-tabs <a> when selected */
+.sidebar-tabs :focus{
+  color: #55a755;
+}
+
+/* To change the color of sidebar-tabs <i> and border when selected */
+.sidebar-tabs:focus-within{
+  color: #55a755;
+  border-color: #55a755; 
+}
+
   
 .sidebar-tabs a{
   color: inherit;
@@ -541,10 +575,23 @@ button:hover {
   color: #55A747;
 }
 
+
 .sidebar-filters{
   /* border-radius: 1px !important; */
   border-color: grey !important;
   border: 0.5px !important;
+}
+
+.skillBox{
+  background-color: #f3f3f3;
+  margin-top: -10px;
+  margin-left: -20px;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+.skillBox .progress{
+  width: 235px !important;
 }
 
 .map-container{
