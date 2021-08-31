@@ -154,12 +154,14 @@ background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #1
 
 }
 
-.fas{
+/* .fas{
   color: #c8c8c8;
 }
 .fas:hover{
   color: white !important;
-}
+} */
+
+
 .inner-card{
   border: solid 0.5px rgba(128, 128, 128, 0.089);
   background-color: #f9f9f9;
@@ -331,12 +333,42 @@ background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #1
 }
 
 .candidates_background{
-  margin-top: 130px !important;
+  margin-top: 180px !important;
+  margin-left: 25px;
 /* background-color: #f5f6f8 !important; */
+}
+
+.candidates_background ul li{
+  width: 400px !important;
+  list-style: none;
+  border-color: #AAAAAA;
+}
+
+input:focus{
+  outline: none !important;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+}
+
+.icon {
+  color: #AAAAAA;
+  padding: 15px;
+  margin-left: 350px;
+  min-width: 50px;
 }
 
 .candidates-header-inner{
   margin-top: 100px !important;
+}
+
+#candidates_cards{
+  margin-top: 90px;
 }
 
 .candidates_cards{
@@ -384,6 +416,40 @@ background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #1
   background-color: #fff;
   border-color: #55A747;
 } */
+
+.page-numbers{
+  margin-top: 2rem;
+  margin-left: -1rem;
+
+}
+
+.pageNo-card{
+  width:max-content;
+  margin-right: 5px;
+  border: solid 0.5px rgb(228, 228, 228);
+}
+
+.pageNo-card:hover{
+  background-color: #55a747;
+}
+
+.pageNo-card a{
+  padding: 7px;
+  font: Normal 13px "Montserrat", sans-serif;
+  color: #999999;
+}
+
+.pageNo-card a:hover{
+  color: #FFFFFF !important;
+}
+
+.activePage{
+  background-color: #55a747;
+}
+
+.activePage a{
+  color: #FFFFFF !important;
+}
 
 
 
@@ -494,6 +560,10 @@ button:hover {
 /*========================================================================================================================================== */
 /* ______________________________________________________________________Candidates_Dashboard_________________________________________________________ */
 
+.candidate-header-inner{
+  margin-top: 100px !important;
+}
+
 
 .resume{
   border-radius: none !important;
@@ -523,6 +593,19 @@ button:hover {
   border-color: #55a755;
   color: #55a755;
   }
+
+
+  /* To change the color of sidebar-tabs <a> when selected */
+.sidebar-tabs :focus{
+  color: #55a755;
+}
+
+/* To change the color of sidebar-tabs <i> and border when selected */
+.sidebar-tabs:focus-within{
+  color: #55a755;
+  border-color: #55a755; 
+}
+
   
 .sidebar-tabs a{
   color: inherit;
@@ -536,36 +619,22 @@ button:hover {
 }
 
 
-.jobs-inner-card{
-  border: solid 0.5px rgba(128, 128, 128, 0.089);
-  /* background-color: white; */
-  transition: all ease-in-out 0.3s;
-}
-
-.jobs-inner-card h6{
-  margin-top: 5px;
-}
-
-.jobs-inner-card h6:hover{
-  color: rgb(85, 167, 71) !important;
-}
-
-.jobs-inner-card p{
-  font-size: 12px;
-  color: rgb(88, 88, 88);
-}
-
-.jobs-inner-card a{
-  margin-top: 2px;
-  font-size: 12px;
-  color: rgb(85, 167, 71) !important;
-  text-decoration: none !important;
-}
-
 .sidebar-filters{
   /* border-radius: 1px !important; */
   border-color: grey !important;
   border: 0.5px !important;
+}
+
+.skillBox{
+  background-color: #f3f3f3;
+  margin-top: -10px;
+  margin-left: -20px;
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+.skillBox .progress{
+  width: 235px !important;
 }
 
 .map-container{
@@ -694,4 +763,386 @@ color: #777777;
 
 .awards_card .card{
   width: max-content;
+}
+
+
+.shortlistedJobs_card{
+  border: solid 0.5px rgba(128, 128, 128, 0.089);
+  /* background-color: white; */
+  transition: all ease-in-out 0.3s;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.shortlistedJobs_card h6{
+  margin-top: 20px;
+}
+
+.shortlistedJobs_card p{
+  font-size: 12px;
+  color: rgb(88, 88, 88);
+}
+
+.appliedJobs_card{
+  border: solid 0.5px rgba(128, 128, 128, 0.089);
+  /* background-color: white; */
+  transition: all ease-in-out 0.3s;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.appliedJobs_card h6{
+  margin-top: 20px;
+}
+
+.appliedJobs_card p{
+  font-size: 12px;
+  color: rgb(88, 88, 88);
+}
+
+.progressIndicatorYes{
+  text-align: center;
+  border: solid thin #55A747;
+  color: #55A747;
+}
+
+.progressIndicatorNo{
+  text-align: center;
+  border: solid thin rgb(230, 38, 38);
+  color: rgb(230, 38, 38);
+}
+
+.jobAlerts_card{
+  border: solid 0.5px rgba(128, 128, 128, 0.089);
+  /* background-color: white; */
+  transition: all ease-in-out 0.3s;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.jobAlerts_card h6{
+  margin-top: 20px;
+}
+
+.jobAlerts_card p{
+  font-size: 12px;
+  color: rgb(88, 88, 88);
+}
+
+.CVBox{
+  border: solid 1px  rgba(27, 27, 27, 0.096);
+  padding: 15px;
+  padding-left: 25px !important;
+}
+
+.CVBox p{
+  font-size: 13.5px;
+  color: rgb(8, 8, 8);
+}
+
+.CVBox .btn-default:hover{
+  background-color: white !important;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================================================================================================================================== */
+/* ______________________________________________________________________Candidates_Profile_________________________________________________________ */
+
+
+
+#Profile_Overview{
+     
+  height: 100%;
+  
+          /* background: url('/img/header1.jpg')  no-repeat center/cover; */
+          /* background: linear-gradient(180deg,  #18304bf1, #18304bf1), url('/img/header.jpg')  no-repeat center/cover; */
+          /* background: linear-gradient(360deg,  #203f62, #070d13) fixed; */
+
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url();
+
+  background: #313540;
+
+  /* Set a specific height */
+  height: 37vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
+.profile_header{
+  padding: 20px;
+}
+
+.name_plate{
+  text-decoration: none;
+}
+
+ .name_plate a{
+  font: Normal 20px "Raleway", sans-serif !important;
+  color: whitesmoke !important;
+  font-weight: bold !important;
+}
+
+.name_plate p{
+  font: Normal 13px "Montserrat", sans-serif !important;
+  color: #ccc !important;
+} 
+
+.fa {
+  padding: 1px;
+  font-size: 8px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 4px;
+  margin-right: 3px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: white;
+color: #3B5998;
+}
+
+.fa-twitter {
+background: white;
+color: #55ACEE;
+}
+
+.fa-linkedin {
+  background: white;
+  color: #007bb5;
+}
+
+/* .profile-overview{
+  
+
+} */
+
+.overview_navbar {
+  /* border-bottom : 3px solid #3797a4; */
+  background: #FFFFFF;
+  top: 0;
+  z-index: 10;
+  width: 50%;
+  display: block;
+  -webkit-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s;
+}
+.overview_navbar a {
+  
+  color: #CCCCCC !important;
+  
+
+  font: Normal 13px "Montserrat", sans-serif !important;
+    letter-spacing: 0px !important;
+}
+
+.overview_navbar ul{
+  display: block;
+  width: max-content; 
+  justify-items: center;
+  padding-inline-start: 35px;
+
+}
+
+.overview_navbar ul li{
+  display: block;
+  padding-inline-end: 28px;
+  width: max-content; 
+  justify-items: center;
+
+}
+
+.memberInfo{
+  margin-left: 62px !important;
+  margin-top: 74px !important;
+}
+
+.memberInfo p{
+  font: Normal 13px "Montserrat", sans-serif;
+  color: #CCCCCC; 
+}
+
+#resume_profile{
+  border-radius: none !important;
+  border: none !important;
+}
+
+.CV{
+  margin-left: 105px;
+  margin-top: 55px;
+  margin-bottom: 35px;
+  width: 750px;
+}
+
+#candidate_about{
+
+  font: Normal 13px "Montserrat", sans-serif;
+  color: #757575;
+  line-height: 1.8em;
+
+}
+
+/* .about_section p{
+  line-height: 1.8em;
+} */
+
+#candidate_education{
+
+  font: Normal 13px "Montserrat", sans-serif;
+  color: #757575;
+  line-height: 1.8em;
+  
+}
+
+.education_section a{
+
+  font: Normal 14px "Montserrat", sans-serif !important;
+  color: #999999 !important;
+
+}
+
+.education_section span{
+
+  font: bold 14px "Raleway", sans-serif !important;
+  color: #424242 !important;
+  letter-spacing: 1px !important;
+
+}
+
+
+
+
+#candidate_experiance{
+
+  font: Normal 13px "Montserrat", sans-serif;
+  color: #757575;  
+  line-height: 1.8em;
+  
+}
+
+.experiance_section a{
+
+  font: Normal 14px "Montserrat", sans-serif !important;
+  color: #999999 !important;
+
+}
+
+
+
+
+#candidate_skills{
+  
+  font: Normal 13px "Montserrat", sans-serif;
+  color: #757575; 
+  line-height: 1.8em; 
+  
+}
+
+.progress{
+  border-start-start-radius: 0% !important;
+  border-end-start-radius: 0% !important;
+}
+
+.progress-bar{
+  border-start-start-radius: 0% !important;
+  border-end-start-radius: 0% !important;
+}
+
+
+
+#candidate_videos{
+  
+  font: Normal 13px "Montserrat", sans-serif;
+  color: #757575;  
+  line-height: 1.8em;
+  
+}
+
+.video_section{
+  width: 650px;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+#candidate_awards{
+  
+  font: Normal 13px "Montserrat", sans-serif;
+  color: #757575;  
+  line-height: 1.8em;
+  
+}
+
+.awards_section a{
+
+  font: Normal 14px "Montserrat", sans-serif !important;
+  color: #999999 !important;
+
+}
+
+.candidate-contact-form{
+  width: 355px;
+  height: 510px;
+  margin-top: -60px;
+  margin-left: -25px;
+  z-index: -1;
+  background-color: #FCFCFC;
+  border: solid 1px #f1f1f1;
+  
+}
+
+.candidate-contact-form .input-group{
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 320px;
+}
+
+
+ .tacbox {
+  padding: 5px;
+  margin-left: 1px;
+  max-width: 345px;
+}
+
+.tacbox input {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
 }
