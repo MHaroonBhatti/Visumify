@@ -103,13 +103,16 @@
                             <ul class="list-group list-group-horizontal ml-5 pl-5">
                                 <li>
                                     <label for="city"></label>
-                                    <input placeholder="All Locations" class="text input-css search-input form-control"
-                                        name="city" style="font-size: 12px;">
+                                    <div class="input-icons">
+                                        <i class="fas fa-location icon"></i><input placeholder="All Locations"
+                                            class="text search-input form-control" name="city"
+                                            style="font-size: 12px; color:#AAAAAA;">
+                                    </div>
                                 </li>
                                 <li>
                                     <label for="city"></label>
                                     <select class="px-lg-2 search-input form-control" name="city"
-                                        style="font-size: 12px;">
+                                        style="font-size: 12px; color:#AAAAAA;">
                                         <option class="option" value="">All Specialisms</option>
                                     </select>
                                 </li>
@@ -280,17 +283,21 @@
 
                     <div class="row">
 
-                        <ul class="page-numbers list-group list-group-horizontal">
-                            <li class="active disabled">
-                                <p>1</p>
-                            </li>
-                            <li class="active disabled">
-                                <p>2</p>
-                            </li>
-                            <li >
-                                <p>Next></p>
-                            </li>
-                        </ul>
+                        <div class="container-fluid page-numbers">
+                            <div class="row">
+                                <div class="activePage pageNo-card">
+                                    <a>1</a>
+                                </div>
+                                <div class="pageNo-card">
+                                    <a>2</a>
+                                </div>
+                                <div class="pageNo-card">
+                                    <a>Next></a>
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 

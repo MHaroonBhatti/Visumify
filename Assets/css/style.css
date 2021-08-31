@@ -341,6 +341,26 @@ background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #1
 .candidates_background ul li{
   width: 400px !important;
   list-style: none;
+  border-color: #AAAAAA;
+}
+
+input:focus{
+  outline: none !important;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+}
+
+.icon {
+  color: #AAAAAA;
+  padding: 15px;
+  margin-left: 350px;
+  min-width: 50px;
 }
 
 .candidates-header-inner{
@@ -404,10 +424,33 @@ background: grey;          /* background: linear-gradient(180deg,  #18304bf1, #1
 }
 
 .pageNo-card{
-  width: max-content;
-  margin: 2px;
-  border: 00.5px;
+  width:max-content;
+  margin-right: 5px;
+  border: solid 0.5px rgb(228, 228, 228);
 }
+
+.pageNo-card:hover{
+  background-color: #55a747;
+}
+
+.pageNo-card a{
+  padding: 7px;
+  font: Normal 13px "Montserrat", sans-serif;
+  color: #999999;
+}
+
+.pageNo-card a:hover{
+  color: #FFFFFF !important;
+}
+
+.activePage{
+  background-color: #55a747;
+}
+
+.activePage a{
+  color: #FFFFFF !important;
+}
+
 
 
 
