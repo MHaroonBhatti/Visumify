@@ -96,8 +96,12 @@ img.wp-smiley,
   border-radius: none !important;
   border: none !important;
 }
-
-
+.border-none{
+  border: none;
+}
+.card a, b{
+  font-size: 12px !important;
+}
 
 
 /*========================================================================================================================================== */
@@ -560,6 +564,7 @@ button:hover {
 /*========================================================================================================================================== */
 /* ______________________________________________________________________Candidates_Dashboard_________________________________________________________ */
 
+
 .candidate-header-inner{
   margin-top: 100px !important;
 }
@@ -618,6 +623,32 @@ button:hover {
   color: #55A747;
 }
 
+
+.jobs-inner-card{
+  border: solid 0.5px rgba(128, 128, 128, 0.089);
+  /* background-color: white; */
+  transition: all ease-in-out 0.3s;
+}
+
+.jobs-inner-card h6{
+  margin-top: 5px;
+}
+
+.jobs-inner-card h6:hover{
+  color: rgb(85, 167, 71) !important;
+}
+
+.jobs-inner-card p{
+  font-size: 12px;
+  color: rgb(88, 88, 88);
+}
+
+.jobs-inner-card a{
+  margin-top: 2px;
+  font-size: 12px;
+  color: rgb(85, 167, 71) !important;
+  text-decoration: none !important;
+}
 
 .sidebar-filters{
   /* border-radius: 1px !important; */
@@ -763,6 +794,9 @@ color: #777777;
 
 .awards_card .card{
   width: max-content;
+
+}
+
 }
 
 
@@ -1146,3 +1180,4 @@ color: #55ACEE;
   width: 1em;
   vertical-align: middle;
 }
+
