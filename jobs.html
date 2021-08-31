@@ -17,8 +17,10 @@
         href='Assets/css/custom-style.css?ver=9d8169f59302cc15950570b0b6ac6c3e' type='text/css' media='all' />
     <link rel='stylesheet' id='cs_iconmoon_css-css' href='Assets/css/iconmoon.css' type='text/css' media='all' />
 
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 
@@ -99,7 +101,7 @@
                         <div
                             class="row jobs_background align-items-center justify-content-center  margin-left px-3 mx-2">
                             <div class="col-lg-3 my-2 pl-3 px-2 ">
-                                <label for="search"></label>
+                                <label class="ml-5" for="search"></label>
                                 <input name="search" class="place  search-input form-control mr-3 " type="text"
                                     placeholder="Search Keywords" aria-label="Search">
                                 <p style="color: #ffffff;">Search Keywords e.g web design</p>
@@ -107,7 +109,7 @@
                             </div>
                             <div class="col-lg-3 p-0 my-2 px-2">
 
-                                <label for="city"></label>
+                                <label class="ml-5" for="city"></label>
                                 <select class="px-2 select-css search-input form-control" name="city">
                                     <option class="option" value="">All Specialisms</option>
 
@@ -119,7 +121,7 @@
                             </div>
                             <div class="col-lg-3 p-0 my-2 px-2">
 
-                                <label for="city"></label>
+                                <label class="ml-5" for="city"></label>
                                 <input placeholder="All Locations" class=" text input-css search-input form-control"
                                     name="city">
 
@@ -165,14 +167,14 @@
                 <div class="col-3 job_cards py-2">
                     <div class="row sidebar-filters mt-2">
                         <div class="col-12 px-4 py-1">
-                            <label for="search"></label>
+                            <label class="ml-5" for="search"></label>
                             <input name="search" class="place  search-input form-control mr-3 " type="text"
                                 placeholder="Search Keywords" aria-label="Search">
                         </div>
                     </div>
                     <div class="row sidebar-filters">
                         <div class="col-12 px-4 py-1">
-                            <label for="city"></label>
+                            <label class="ml-5" for="city"></label>
                             <input placeholder="All Locations" class=" text input-css search-input form-control"
                                 name="city">
                         </div>
@@ -181,33 +183,258 @@
                         <div class="col-12 px-4 py-1">
                             <h6 style="color: aquamarine;">Date Posted</h6>
                             <!-- <p class="font-weight-lighter">Last Hour </p> -->
-                            <label class="container">
-                                <input type="radio">
-                                <span class="checkmark"> Last Hour</span>
+
+                             
+
+                            <label class="d-flex align-items-center">
+
+                                <input type="radio" style="height: 20px!important;" id="last" name="fav_language"
+                                    value="last">
+                                  <label class="ml-5" for="last">Last Hour</label>
+
                             </label>
-                            <label class="container">
-                                <input type="radio">
-                                <span class="checkmark"> Last 24 Hour</span>
+                            <label class="d-flex align-items-center">
+                                <input type="radio" style="height: 20px!important;" id="last24" name="fav_language"
+                                    value="last24">
+                                  <label class="ml-5" for="last24">Last 24 Hour</label>
+
                             </label>
-                            <label class="container">
-                                <input type="radio">
-                                <span class="checkmark"> Last 7 days</span>
+                            <label class="d-flex align-items-center">
+
+                                <input type="radio" style="height: 20px!important;" id="7day" name="fav_language"
+                                    value="7day">
+                                  <label class="ml-5" for="7day">Last 7 Days</label>
+
+
                             </label>
-                            <label class="container">
-                                <input type="radio">
-                                <span class="checkmark"> Last 14 days</span>
+                            <label class="d-flex align-items-center">
+                                <input type="radio" style="height: 20px!important;" id="14days" name="fav_language"
+                                    value="14days">
+                                  <label class="ml-5" for="14days">Last 14 days</label>
+
                             </label>
-                            <label class="container">
-                                <input type="radio">
-                                <span class="checkmark"> Last 30 days</span>
+                            <label class="d-flex align-items-center">
+
+                                <input type="radio" style="height: 20px!important;" id="30days" name="fav_language"
+                                    value="20days">
+                                  <label class="ml-5" for="30days">Last 30 days</label>
+
                             </label>
-                            <label class="container">
-                                <input type="radio">
-                                <span class="checkmark"> All</span>
+                            <label class="d-flex align-items-center">
+                                <input type="radio" style="height: 20px!important;" id="All" name="fav_language"
+                                    value="All">
+                                  <label class="ml-5" for="All">All</label>
+
                             </label>
 
                         </div>
                     </div>
+
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                    aria-expanded="true" aria-controls="collapseOne1">
+                                    <h5 class="mb-0">
+                                        Offered Salary <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="scales"
+                                            name="scales" checked>
+                                        <label class="ml-3" for="scales">Scales</label>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="horns" name="horns">
+                                        <label class="ml-3" for="horns">Horns</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>    
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingTwo2">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                                    href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                    <h5 class="mb-0">
+                                        Career Level <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="scales"
+                                            name="scales" checked>
+                                        <label class="ml-3" for="scales">Scales</label>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="horns" name="horns">
+                                        <label class="ml-3" for="horns">Horns</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingThree3">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                                    href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                                    <h5 class="mb-0">
+                                        Experience <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="scales"
+                                            name="scales" checked>
+                                        <label class="ml-3" for="scales">Scales</label>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="horns" name="horns">
+                                        <label class="ml-3" for="horns">Horns</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingFour4">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                                    href="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
+                                    <h5 class="mb-0">
+                                        Gender <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="scales"
+                                            name="scales" checked>
+                                        <label class="ml-3" for="scales">Scales</label>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="horns" name="horns">
+                                        <label class="ml-3" for="horns">Horns</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingFive5">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                                    href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
+                                    <h5 class="mb-0">
+                                        Industry <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="scales"
+                                            name="scales" checked>
+                                        <label class="ml-3" for="scales">Scales</label>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="horns" name="horns">
+                                        <label class="ml-3" for="horns">Horns</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                        <!-- Accordion card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingSix6">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                                    href="#collapseSix6" aria-expanded="false" aria-controls="collapseSix6">
+                                    <h5 class="mb-0">
+                                        Qualification <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <!-- Card body -->
+                            <div id="collapseSix6" class="collapse" role="tabpanel" aria-labelledby="headingSix6"
+                                data-parent="#accordionEx">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="scales"
+                                            name="scales" checked>
+                                        <label class="ml-3" for="scales">Scales</label>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <input type="checkbox" style="height : 25px !important" id="horns" name="horns">
+                                        <label class="ml-3" for="horns">Horns</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Accordion card -->
+
+                    
+                    <!-- Accordion wrapper -->
 
                 </div>
 
@@ -240,7 +467,8 @@
 
                     <div class="row jobs-inner-card p-3">
                         <div class="col-2 py-2 px-1">
-                            <img src="Assets/img/employersLogo/employer-logo-1.png" width="120" style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                            <img src="Assets/img/employersLogo/employer-logo-1.png" width="120"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                         </div>
                         <div class="col-6 p-2 ml-3">
                             <a>Leisure & Tourism Jobs</a>
@@ -248,7 +476,8 @@
                             <p>3 years ago London, United Kingdom</p>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;" style="font-size: 11px;">Temporary</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;"
+                                style="font-size: 11px;">Temporary</button>
                             <i class='far fa-heart' style=' padding:5px; color:white; background-color:#55A747;'></i>
                         </div>
                     </div>
@@ -256,7 +485,8 @@
 
                     <div class="row jobs-inner-card p-3">
                         <div class="col-2 py-2 px-1">
-                            <img src="Assets/img/employersLogo/employer-logo-2.png" width="120" style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                            <img src="Assets/img/employersLogo/employer-logo-2.png" width="120"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                         </div>
                         <div class="col-6 p-2 ml-3">
                             <a>Leisure & Tourism Jobs</a>
@@ -264,7 +494,8 @@
                             <p>1 year ago London, United Kingdom</p>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;" style="font-size: 11px;">Internship</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;"
+                                style="font-size: 11px;">Internship</button>
                             <i class='far fa-heart' style=' padding:5px; color:white; background-color:#55A747;'></i>
                         </div>
                     </div>
@@ -272,7 +503,8 @@
 
                     <div class="row jobs-inner-card p-3">
                         <div class="col-2 py-2 px-1">
-                            <img src="Assets/img/employersLogo/employer-logo-3.png" width="120" style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                            <img src="Assets/img/employersLogo/employer-logo-3.png" width="120"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                         </div>
                         <div class="col-6 p-2 ml-3">
                             <a>Digital & Creative</a>
@@ -280,7 +512,8 @@
                             <p>1 year ago Aberdeen, United Kingdom</p>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;" style="font-size: 11px;">Volunteer</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;"
+                                style="font-size: 11px;">Volunteer</button>
                             <i class='far fa-heart' style=' padding:5px; color:white; background-color:#55A747;'></i>
                         </div>
                     </div>
@@ -288,7 +521,8 @@
 
                     <div class="row jobs-inner-card p-3">
                         <div class="col-2 py-2 px-1">
-                            <img src="Assets/img/employersLogo/employer-logo-4.png" width="120" style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                            <img src="Assets/img/employersLogo/employer-logo-4.png" width="120"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                         </div>
                         <div class="col-6 p-2 ml-3">
                             <a>IT Contractor</a>
@@ -296,7 +530,8 @@
                             <p>1 year ago London, United Kingdom</p>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;" style="font-size: 11px;">Full Time</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;"
+                                style="font-size: 11px;">Full Time</button>
                             <i class='far fa-heart' style=' padding:5px; color:white; background-color:#55A747;'></i>
                         </div>
                     </div>
@@ -304,7 +539,8 @@
 
                     <div class="row jobs-inner-card p-3">
                         <div class="col-2 py-2 px-1">
-                            <img src="Assets/img/employersLogo/employer-logo-5.png" width="120" style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                            <img src="Assets/img/employersLogo/employer-logo-5.png" width="120"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                         </div>
                         <div class="col-6 p-2 ml-3">
                             <a>Manufacturing Jobs</a>
@@ -312,14 +548,16 @@
                             <p>1 year ago London, United Kingdom</p>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;" style="font-size: 11px;">Part Time</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;"
+                                style="font-size: 11px;">Part Time</button>
                             <i class='far fa-heart' style=' padding:5px; color:white; background-color:#55A747;'></i>
                         </div>
                     </div>
 
                     <div class="row jobs-inner-card p-3">
                         <div class="col-2 py-2 px-1">
-                            <img src="Assets/img/employersLogo/employer-logo-1.png" width="120" style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                            <img src="Assets/img/employersLogo/employer-logo-1.png" width="120"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                         </div>
                         <div class="col-6 p-2 ml-3">
                             <a>Leisure & Tourism Jobs</a>
@@ -327,14 +565,16 @@
                             <p>1 year ago Strasbourg, France</p>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;" style="font-size: 11px;">Freelance</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;"
+                                style="font-size: 11px;">Freelance</button>
                             <i class='far fa-heart' style=' padding:5px; color:white; background-color:#55A747;'></i>
                         </div>
                     </div>
 
                     <div class="row jobs-inner-card p-3">
                         <div class="col-2 py-2 px-1">
-                            <img src="Assets/img/employersLogo/employer-logo-6.png" width="120" style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                            <img src="Assets/img/employersLogo/employer-logo-6.png" width="120"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                         </div>
                         <div class="col-6 p-2 ml-3">
                             <a>Legal Jobs</a>
@@ -342,14 +582,16 @@
                             <p>1 year ago Sheffield, United Kingdom</p>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;" style="font-size: 11px;">Freelance</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;"
+                                style="font-size: 11px;">Freelance</button>
                             <i class='far fa-heart' style=' padding:5px; color:white; background-color:#55A747;'></i>
                         </div>
                     </div>
 
                     <div class="row jobs-inner-card p-3">
                         <div class="col-2 py-2 px-1">
-                            <img src="Assets/img/employersLogo/employer-logo-stock.jpg" width="120" style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                            <img src="Assets/img/employersLogo/employer-logo-stock.jpg" width="120"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                         </div>
                         <div class="col-6 p-2 ml-3">
                             <a>Legal Jobs</a>
@@ -357,14 +599,16 @@
                             <p>1 year ago Sheffield, United Kingdom</p>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;" style="font-size: 11px;">Temporary</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;"
+                                style="font-size: 11px;">Temporary</button>
                             <i class='far fa-heart' style=' padding:5px; color:white; background-color:#55A747;'></i>
                         </div>
                     </div>
 
                     <div class="row jobs-inner-card p-3">
                         <div class="col-2 py-2 px-1">
-                            <img src="Assets/img/employersLogo/employer-logo-7.png" width="120" style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
+                            <img src="Assets/img/employersLogo/employer-logo-7.png" width="120"
+                                style="border: solid 0.5px rgba(0, 0, 0, 0.075);">
                         </div>
                         <div class="col-6 p-2 ml-3">
                             <a>Estate Agency</a>
@@ -372,7 +616,8 @@
                             <p>2 years ago Aberdeen, United Kingdom</p>
                         </div>
                         <div class="col-3 p-2 mt-4 ml-5">
-                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;" style="font-size: 11px;">Freelance</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm border-radius: 0px !important;"
+                                style="font-size: 11px;">Freelance</button>
                             <i class='far fa-heart' style=' padding:5px; color:white; background-color:#55A747;'></i>
                         </div>
                     </div>
